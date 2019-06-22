@@ -25,11 +25,6 @@ public class CurrencyCodeAudit {
     Object[] args = pjp.getArgs();
     Parameter[] parameters = ((MethodSignature) pjp.getSignature()).getMethod().getParameters();
 
-    IntStream.range(0, args.length)
-        .mapToObj(index -> (parameters[index].isAnnotationPresent(ToUpper.class)) ? (new String(
-            args[index].toString().toUpperCase())) : (args[index]))
-        .forEach(System.out::println);
-
     return pjp.proceed(IntStream.range(0, args.length)
         .mapToObj(index -> (parameters[index].isAnnotationPresent(ToUpper.class)) ? (new String(
             args[index].toString().toUpperCase())) : (args[index]))
