@@ -1,6 +1,7 @@
-package io.nodom.redis.event;
+package io.nodom.redis.listener;
 
 
+import io.nodom.redis.event.CurrencyConversionEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
