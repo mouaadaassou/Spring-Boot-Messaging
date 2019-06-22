@@ -1,4 +1,4 @@
-package io.nodom.redis;
+package io.nodom.messaging;
 
 import java.util.Date;
 
@@ -7,8 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import io.nodom.redis.domain.Rate;
-import io.nodom.redis.repository.RateRepository;
+import io.nodom.messaging.domain.Rate;
+import io.nodom.messaging.repository.RateRepository;
 
 @SpringBootApplication
 public class RestApiDemoApplication {

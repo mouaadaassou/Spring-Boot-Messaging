@@ -1,4 +1,4 @@
-package io.nodom.redis.aop;
+package io.nodom.messaging.aop;
 
 import java.lang.reflect.Parameter;
 import java.util.stream.IntStream;
@@ -10,13 +10,13 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
-import io.nodom.redis.annotation.ToUpper;
+import io.nodom.messaging.annotation.ToUpper;
 
 @Aspect
 @Component
 public class CurrencyCodeAudit {
 
-  @Pointcut("execution(* io.nodom.redis.service.*Service.*(.., @io.nodom.redis.annotation.ToUpper (*),..))")
+  @Pointcut("execution(* io.nodom.messaging.service.*Service.*(.., @io.nodom.messaging.annotation.ToUpper (*),..))")
   public void methodPointcut() {
   }
 

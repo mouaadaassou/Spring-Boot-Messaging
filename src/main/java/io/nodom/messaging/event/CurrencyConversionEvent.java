@@ -1,6 +1,6 @@
-package io.nodom.redis.event;
+package io.nodom.messaging.event;
 
-import io.nodom.redis.domain.CurrencyConversion;
+import io.nodom.messaging.domain.CurrencyConversion;
 import org.springframework.context.ApplicationEvent;
 
 public class CurrencyConversionEvent extends ApplicationEvent {

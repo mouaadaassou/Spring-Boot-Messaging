@@ -1,7 +1,7 @@
-package io.nodom.redis.service;
+package io.nodom.messaging.service;
 
-import io.nodom.redis.domain.CurrencyExchange;
-import io.nodom.redis.exception.BadCodeRuntimeException;
+import io.nodom.messaging.domain.CurrencyExchange;
+import io.nodom.messaging.exception.BadCodeRuntimeException;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -10,10 +10,10 @@ import java.util.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import io.nodom.redis.annotation.ToUpper;
-import io.nodom.redis.domain.CurrencyConversion;
-import io.nodom.redis.domain.Rate;
-import io.nodom.redis.repository.RateRepository;
+import io.nodom.messaging.annotation.ToUpper;
+import io.nodom.messaging.domain.CurrencyConversion;
+import io.nodom.messaging.domain.Rate;
+import io.nodom.messaging.repository.RateRepository;
 
 @Service
 public class CurrencyConversionService {

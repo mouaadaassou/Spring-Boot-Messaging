@@ -1,6 +1,6 @@
-package io.nodom.redis.repository;
+package io.nodom.messaging.repository;
 
-import io.nodom.redis.domain.Rate;
+import io.nodom.messaging.domain.Rate;
 import java.util.Date;
 import java.util.List;
 

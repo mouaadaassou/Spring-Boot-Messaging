@@ -1,4 +1,4 @@
-package io.nodom.redis;
+package io.nodom.messaging;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;

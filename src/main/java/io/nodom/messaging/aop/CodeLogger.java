@@ -1,8 +1,7 @@
-package io.nodom.redis.aop;
+package io.nodom.messaging.aop;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import io.nodom.redis.annotation.Log;
+import io.nodom.messaging.annotation.Log;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -20,7 +19,7 @@ public class CodeLogger {
   private static final String DASH_LINE = "==============================";
   private static final String NEXT_LINE = "\n";
 
-  @Pointcut("execution(@io.nodom.redis.annotation.Log * io.nodom.redis..*.*(..)) && @annotation(codeLog)")
+  @Pointcut("execution(@io.nodom.messaging.annotation.Log * io.nodom.messaging..*.*(..)) && @annotation(codeLog)")
   public void codeLogger(Log codeLog) {
   }
 

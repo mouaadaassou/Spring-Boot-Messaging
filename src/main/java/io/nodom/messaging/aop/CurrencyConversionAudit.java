@@ -1,8 +1,8 @@
-package io.nodom.redis.aop;
+package io.nodom.messaging.aop;
 
 
-import io.nodom.redis.event.CurrencyConversionEvent;
-import io.nodom.redis.exception.BadCodeRuntimeException;
+import io.nodom.messaging.event.CurrencyConversionEvent;
+import io.nodom.messaging.exception.BadCodeRuntimeException;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
@@ -20,7 +20,7 @@ public class CurrencyConversionAudit {
     this.publisher = publisher;
   }
 
-  @Pointcut("execution(* io.nodom.redis.service.*Service.*(..))")
+  @Pointcut("execution(* io.nodom.messaging.service.*Service.*(..))")
   public void exceptionPointCut() {
   }
 

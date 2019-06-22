@@ -1,4 +1,4 @@
-package io.nodom.redis.domain;
+package io.nodom.messaging.domain;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

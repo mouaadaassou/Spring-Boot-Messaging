@@ -1,7 +1,7 @@
-package io.nodom.redis.exception;
+package io.nodom.messaging.exception;
 
-import io.nodom.redis.domain.CurrencyConversion;
-import io.nodom.redis.domain.Rate;
+import io.nodom.messaging.domain.CurrencyConversion;
+import io.nodom.messaging.domain.Rate;
 
 public class BadCodeRuntimeException extends RuntimeException {
 

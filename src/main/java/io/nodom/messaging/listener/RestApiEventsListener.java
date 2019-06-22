@@ -1,17 +1,16 @@
-package io.nodom.redis.listener;
+package io.nodom.messaging.listener;
 
-import io.nodom.redis.annotation.Log;
-import org.springframework.beans.factory.annotation.Autowired;
+import io.nodom.messaging.annotation.Log;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.actuate.metrics.CounterService;
 import org.springframework.context.ApplicationEvent;
-import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.support.ServletRequestHandledEvent;
 
 
 @Component
-public class RestApiEventsListener implements ApplicationListener<ApplicationEvent> {
+public class RestApiEventsListener {
 
   private static final String LATEST = "/currency/latest";
 
@@ -22,7 +21,7 @@ public class RestApiEventsListener implements ApplicationListener<ApplicationEve
     this.counterService = counterService;
   }
 
-  @Override
+  @EventListener
   @Log(printParamsValues = true)
   public void onApplicationEvent(ApplicationEvent event) {
     if (event instanceof ServletRequestHandledEvent) {

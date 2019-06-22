@@ -1,4 +1,4 @@
-package io.nodom.redis.domain;
+package io.nodom.messaging.domain;
 
 public class CurrencyExchange {
 

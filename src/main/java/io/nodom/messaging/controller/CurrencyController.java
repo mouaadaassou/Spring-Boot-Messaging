@@ -1,9 +1,9 @@
-package io.nodom.redis.controller;
+package io.nodom.messaging.controller;
 
-import io.nodom.redis.domain.CurrencyConversion;
-import io.nodom.redis.domain.CurrencyExchange;
-import io.nodom.redis.domain.Rate;
-import io.nodom.redis.service.CurrencyConversionService;
+import io.nodom.messaging.domain.CurrencyConversion;
+import io.nodom.messaging.domain.CurrencyExchange;
+import io.nodom.messaging.domain.Rate;
+import io.nodom.messaging.service.CurrencyConversionService;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
